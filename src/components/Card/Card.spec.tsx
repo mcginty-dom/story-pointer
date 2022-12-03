@@ -5,7 +5,7 @@ import Card from "./Card";
 
 describe("Card Tests", () => {
     test("should match snapshot", () => {
-        const component = shallow(<Card></Card>);
+        const component = shallow(<Card/>);
         expect(shallowToJson(component)).toMatchSnapshot();
     })
 })
